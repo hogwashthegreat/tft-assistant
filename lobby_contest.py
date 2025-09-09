@@ -37,7 +37,8 @@ if not acct: raise SystemExit("Riot ID not found (double-check name#tag).")
 puuid = acct["puuid"]
 
 # 2) Live game via TFT spectator (by PUUID on platform host)
-live = get_json(platform(f"/tft/spectator/v5/active-games/by-puuid/{puuid}"))
+live = get_json(platform(f"/lol/spectator/tft/v5/active-games/by-puuid/{puuid}"))
+
 if not live:
     print("Not in a TFT game (or lobby hasn’t started). Try again when you’re in champ select/loading.")
     raise SystemExit()
