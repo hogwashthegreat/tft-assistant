@@ -2,7 +2,7 @@
 import os, time, math, collections, itertools, requests
 
 API_KEY   = os.getenv("RIOT_API_KEY") or "RGAPI_your_key_here"
-GAME_NAME = "hogwash"   # before '#'
+GAME_NAME = "Sparky"   # before '#'
 TAG_LINE  = "dsg"        # after '#'
 PLATFORM  = "na1"        # na1, euw1, kr, etc.
 
